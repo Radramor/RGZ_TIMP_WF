@@ -51,15 +51,15 @@ namespace RGZ_TIMP_WF
 
         private void BarChartButton_Click(object sender, EventArgs e)
         {
-            try
+            //try
             {
                 if (XYDataGridView.RowCount == 0) return;
                 barChart.CreateChart(XYDataGridView, BarChartInfoDataGridView, BarChartPictureBox);
                 ErrorLabel.Text = "";
             }
-            catch (Exception ex)
+            //catch (Exception ex)
             {
-                ErrorLabel.Text = ex.Message;
+               // ErrorLabel.Text = ex.Message;
             }
         }
         private void CreateXYbutton_Click(object sender, EventArgs e)

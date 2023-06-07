@@ -130,7 +130,7 @@ namespace RGZ_TIMP_WF
             Pen pen = new Pen(Color.Black, 1);
             int CountLineInAxes = 10;
             int leftBorder = 50;
-            int rightBorder = 793;
+            int rightBorder = 541;
             int topBorder = 50;
             int bottomBorder = 335;
             float stepX = (rightBorder - leftBorder) / CountLineInAxes;
@@ -153,7 +153,7 @@ namespace RGZ_TIMP_WF
                     botPoint
                 };
                 graphics.DrawLines(pen, XAxes);
-                graphics.DrawString(Math.Round(valuesX, 2).ToString(), new Font("Arial", 14), Brushes.Black, botPoint.X - 10, botPoint.Y + 5);
+                graphics.DrawString(Math.Round(valuesX, 2).ToString(), new Font("Arial", 8), Brushes.Black, botPoint.X - 10, botPoint.Y + 5);
                 valuesX += stepValuesX;
                 topPoint.X += stepX;
                 botPoint.X += stepX;
@@ -180,7 +180,7 @@ namespace RGZ_TIMP_WF
                     leftPoint
                 };
                 graphics.DrawLines(pen, YAxes);
-                graphics.DrawString(Math.Round(valuesY, 2).ToString(), new Font("Arial", 14), Brushes.Black, leftPoint.X - 35, leftPoint.Y - 10);
+                graphics.DrawString(Math.Round(valuesY, 2).ToString(), new Font("Arial", 8), Brushes.Black, leftPoint.X - 35, leftPoint.Y - 10);
                 valuesY += stepValuesY;
                 rightPoint.Y -= stepY;
                 leftPoint.Y -= stepY;

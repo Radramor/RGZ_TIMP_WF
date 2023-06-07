@@ -50,10 +50,10 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LineChartPictureBox = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.BarChartPictureBox = new System.Windows.Forms.PictureBox();
             this.BarChartInfoDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BarChartPictureBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InfoPieChartDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PieChartPictureBox)).BeginInit();
@@ -64,8 +64,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.LineChartInfoDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LineChartPictureBox)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BarChartPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BarChartInfoDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarChartPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,9 +74,10 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.InfoPieChartDataGridView);
             this.panel1.Controls.Add(this.PieChartPictureBox);
-            this.panel1.Location = new System.Drawing.Point(12, 552);
+            this.panel1.Location = new System.Drawing.Point(9, 448);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(753, 418);
+            this.panel1.Size = new System.Drawing.Size(565, 340);
             this.panel1.TabIndex = 0;
             // 
             // InfoPieChartDataGridView
@@ -92,13 +93,14 @@
             this.Column3,
             this.Column2});
             this.InfoPieChartDataGridView.Dock = System.Windows.Forms.DockStyle.Right;
-            this.InfoPieChartDataGridView.Location = new System.Drawing.Point(528, 0);
+            this.InfoPieChartDataGridView.Location = new System.Drawing.Point(396, 0);
+            this.InfoPieChartDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.InfoPieChartDataGridView.Name = "InfoPieChartDataGridView";
             this.InfoPieChartDataGridView.ReadOnly = true;
             this.InfoPieChartDataGridView.RowHeadersVisible = false;
             this.InfoPieChartDataGridView.RowHeadersWidth = 51;
             this.InfoPieChartDataGridView.RowTemplate.Height = 24;
-            this.InfoPieChartDataGridView.Size = new System.Drawing.Size(223, 416);
+            this.InfoPieChartDataGridView.Size = new System.Drawing.Size(167, 338);
             this.InfoPieChartDataGridView.TabIndex = 1;
             // 
             // Column1
@@ -135,8 +137,9 @@
             this.PieChartPictureBox.BackColor = System.Drawing.Color.LightGray;
             this.PieChartPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PieChartPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.PieChartPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PieChartPictureBox.Name = "PieChartPictureBox";
-            this.PieChartPictureBox.Size = new System.Drawing.Size(751, 416);
+            this.PieChartPictureBox.Size = new System.Drawing.Size(563, 338);
             this.PieChartPictureBox.TabIndex = 0;
             this.PieChartPictureBox.TabStop = false;
             // 
@@ -152,9 +155,10 @@
             this.panel2.Controls.Add(this.CreateXYbutton);
             this.panel2.Controls.Add(this.PieChartDataGridView);
             this.panel2.Controls.Add(this.XYDataGridView);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Location = new System.Drawing.Point(9, 10);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(753, 534);
+            this.panel2.Size = new System.Drawing.Size(565, 434);
             this.panel2.TabIndex = 1;
             // 
             // ErrorLabel
@@ -162,16 +166,18 @@
             this.ErrorLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ErrorLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ErrorLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ErrorLabel.Location = new System.Drawing.Point(382, 391);
+            this.ErrorLabel.Location = new System.Drawing.Point(286, 318);
+            this.ErrorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ErrorLabel.Name = "ErrorLabel";
-            this.ErrorLabel.Size = new System.Drawing.Size(366, 138);
+            this.ErrorLabel.Size = new System.Drawing.Size(275, 112);
             this.ErrorLabel.TabIndex = 7;
             // 
             // PieChartButton
             // 
-            this.PieChartButton.Location = new System.Drawing.Point(516, 317);
+            this.PieChartButton.Location = new System.Drawing.Point(387, 258);
+            this.PieChartButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PieChartButton.Name = "PieChartButton";
-            this.PieChartButton.Size = new System.Drawing.Size(232, 66);
+            this.PieChartButton.Size = new System.Drawing.Size(174, 54);
             this.PieChartButton.TabIndex = 6;
             this.PieChartButton.Text = "Нарисовать круговую диаграмму";
             this.PieChartButton.UseVisualStyleBackColor = true;
@@ -179,9 +185,10 @@
             // 
             // LineChartButton
             // 
-            this.LineChartButton.Location = new System.Drawing.Point(192, 463);
+            this.LineChartButton.Location = new System.Drawing.Point(144, 376);
+            this.LineChartButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LineChartButton.Name = "LineChartButton";
-            this.LineChartButton.Size = new System.Drawing.Size(184, 66);
+            this.LineChartButton.Size = new System.Drawing.Size(138, 54);
             this.LineChartButton.TabIndex = 5;
             this.LineChartButton.Text = "Нарисовать кусочно-линейную диаграмму";
             this.LineChartButton.UseVisualStyleBackColor = true;
@@ -189,9 +196,10 @@
             // 
             // BarChartButton
             // 
-            this.BarChartButton.Location = new System.Drawing.Point(3, 463);
+            this.BarChartButton.Location = new System.Drawing.Point(2, 376);
+            this.BarChartButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BarChartButton.Name = "BarChartButton";
-            this.BarChartButton.Size = new System.Drawing.Size(184, 66);
+            this.BarChartButton.Size = new System.Drawing.Size(138, 54);
             this.BarChartButton.TabIndex = 4;
             this.BarChartButton.Text = "Нарисовать столбчатую диаграмму";
             this.BarChartButton.UseVisualStyleBackColor = true;
@@ -199,9 +207,10 @@
             // 
             // DeleteLastChartButton
             // 
-            this.DeleteLastChartButton.Location = new System.Drawing.Point(192, 391);
+            this.DeleteLastChartButton.Location = new System.Drawing.Point(144, 318);
+            this.DeleteLastChartButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DeleteLastChartButton.Name = "DeleteLastChartButton";
-            this.DeleteLastChartButton.Size = new System.Drawing.Size(184, 66);
+            this.DeleteLastChartButton.Size = new System.Drawing.Size(138, 54);
             this.DeleteLastChartButton.TabIndex = 3;
             this.DeleteLastChartButton.Text = "Удалить последний график";
             this.DeleteLastChartButton.UseVisualStyleBackColor = true;
@@ -209,9 +218,10 @@
             // 
             // CreateXYbutton
             // 
-            this.CreateXYbutton.Location = new System.Drawing.Point(3, 391);
+            this.CreateXYbutton.Location = new System.Drawing.Point(2, 318);
+            this.CreateXYbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CreateXYbutton.Name = "CreateXYbutton";
-            this.CreateXYbutton.Size = new System.Drawing.Size(184, 66);
+            this.CreateXYbutton.Size = new System.Drawing.Size(138, 54);
             this.CreateXYbutton.TabIndex = 2;
             this.CreateXYbutton.Text = "Добавить график";
             this.CreateXYbutton.UseVisualStyleBackColor = true;
@@ -223,11 +233,12 @@
             this.PieChartDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PieChartDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnValues});
-            this.PieChartDataGridView.Location = new System.Drawing.Point(516, 3);
+            this.PieChartDataGridView.Location = new System.Drawing.Point(387, 2);
+            this.PieChartDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PieChartDataGridView.Name = "PieChartDataGridView";
             this.PieChartDataGridView.RowHeadersWidth = 51;
             this.PieChartDataGridView.RowTemplate.Height = 24;
-            this.PieChartDataGridView.Size = new System.Drawing.Size(232, 308);
+            this.PieChartDataGridView.Size = new System.Drawing.Size(174, 250);
             this.PieChartDataGridView.TabIndex = 1;
             // 
             // ColumnValues
@@ -241,11 +252,12 @@
             // 
             this.XYDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.XYDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.XYDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.XYDataGridView.Location = new System.Drawing.Point(2, 2);
+            this.XYDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.XYDataGridView.Name = "XYDataGridView";
             this.XYDataGridView.RowHeadersWidth = 51;
             this.XYDataGridView.RowTemplate.Height = 24;
-            this.XYDataGridView.Size = new System.Drawing.Size(507, 380);
+            this.XYDataGridView.Size = new System.Drawing.Size(380, 309);
             this.XYDataGridView.TabIndex = 0;
             // 
             // panel3
@@ -254,9 +266,10 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.LineChartInfoDataGridView);
             this.panel3.Controls.Add(this.LineChartPictureBox);
-            this.panel3.Location = new System.Drawing.Point(771, 12);
+            this.panel3.Location = new System.Drawing.Point(578, 10);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1262, 476);
+            this.panel3.Size = new System.Drawing.Size(695, 387);
             this.panel3.TabIndex = 2;
             // 
             // LineChartInfoDataGridView
@@ -271,13 +284,14 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.LineChartInfoDataGridView.Dock = System.Windows.Forms.DockStyle.Right;
-            this.LineChartInfoDataGridView.Location = new System.Drawing.Point(1124, 0);
+            this.LineChartInfoDataGridView.Location = new System.Drawing.Point(591, 0);
+            this.LineChartInfoDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LineChartInfoDataGridView.Name = "LineChartInfoDataGridView";
             this.LineChartInfoDataGridView.ReadOnly = true;
             this.LineChartInfoDataGridView.RowHeadersVisible = false;
             this.LineChartInfoDataGridView.RowHeadersWidth = 51;
             this.LineChartInfoDataGridView.RowTemplate.Height = 24;
-            this.LineChartInfoDataGridView.Size = new System.Drawing.Size(136, 474);
+            this.LineChartInfoDataGridView.Size = new System.Drawing.Size(102, 385);
             this.LineChartInfoDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -304,8 +318,9 @@
             this.LineChartPictureBox.BackColor = System.Drawing.Color.LightGray;
             this.LineChartPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LineChartPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.LineChartPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LineChartPictureBox.Name = "LineChartPictureBox";
-            this.LineChartPictureBox.Size = new System.Drawing.Size(1260, 474);
+            this.LineChartPictureBox.Size = new System.Drawing.Size(693, 385);
             this.LineChartPictureBox.TabIndex = 0;
             this.LineChartPictureBox.TabStop = false;
             // 
@@ -315,20 +330,11 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.BarChartInfoDataGridView);
             this.panel4.Controls.Add(this.BarChartPictureBox);
-            this.panel4.Location = new System.Drawing.Point(771, 494);
+            this.panel4.Location = new System.Drawing.Point(578, 401);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1262, 476);
+            this.panel4.Size = new System.Drawing.Size(695, 387);
             this.panel4.TabIndex = 3;
-            // 
-            // BarChartPictureBox
-            // 
-            this.BarChartPictureBox.BackColor = System.Drawing.Color.LightGray;
-            this.BarChartPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BarChartPictureBox.Location = new System.Drawing.Point(0, 0);
-            this.BarChartPictureBox.Name = "BarChartPictureBox";
-            this.BarChartPictureBox.Size = new System.Drawing.Size(1260, 474);
-            this.BarChartPictureBox.TabIndex = 0;
-            this.BarChartPictureBox.TabStop = false;
             // 
             // BarChartInfoDataGridView
             // 
@@ -342,13 +348,14 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.BarChartInfoDataGridView.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BarChartInfoDataGridView.Location = new System.Drawing.Point(1124, 0);
+            this.BarChartInfoDataGridView.Location = new System.Drawing.Point(591, 0);
+            this.BarChartInfoDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BarChartInfoDataGridView.Name = "BarChartInfoDataGridView";
             this.BarChartInfoDataGridView.ReadOnly = true;
             this.BarChartInfoDataGridView.RowHeadersVisible = false;
             this.BarChartInfoDataGridView.RowHeadersWidth = 51;
             this.BarChartInfoDataGridView.RowTemplate.Height = 24;
-            this.BarChartInfoDataGridView.Size = new System.Drawing.Size(136, 474);
+            this.BarChartInfoDataGridView.Size = new System.Drawing.Size(102, 385);
             this.BarChartInfoDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn3
@@ -370,18 +377,31 @@
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
+            // BarChartPictureBox
+            // 
+            this.BarChartPictureBox.BackColor = System.Drawing.Color.LightGray;
+            this.BarChartPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BarChartPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.BarChartPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BarChartPictureBox.Name = "BarChartPictureBox";
+            this.BarChartPictureBox.Size = new System.Drawing.Size(693, 385);
+            this.BarChartPictureBox.TabIndex = 0;
+            this.BarChartPictureBox.TabStop = false;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 982);
+            this.ClientSize = new System.Drawing.Size(1284, 798);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Построитель диаграмм";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.InfoPieChartDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PieChartPictureBox)).EndInit();
@@ -392,8 +412,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.LineChartInfoDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LineChartPictureBox)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BarChartPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BarChartInfoDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarChartPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
