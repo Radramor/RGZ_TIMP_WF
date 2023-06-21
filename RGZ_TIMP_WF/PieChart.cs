@@ -18,7 +18,14 @@ namespace RGZ_TIMP_WF
             float sum = CountSumAndFillList(dataGridView);
             Random random = new Random();
             Graphics graphics = pictureBox.CreateGraphics();
-            Rectangle rectangle = new Rectangle(30, 3, 330, 330);
+            int border = 20;
+            Rectangle rectangle = new Rectangle
+            (
+                0,
+                0,
+                Math.Min(pictureBox.Height, pictureBox.Width - infoDataGridView.Width),
+                Math.Min(pictureBox.Height, pictureBox.Width - infoDataGridView.Width)
+            );
             int degreesInCircle = 360;
             float startAngle = 0;
             float sweepAngle;
@@ -49,14 +56,14 @@ namespace RGZ_TIMP_WF
                 {
                     numbers.Add(float.Parse(dataGridView.Rows[i].Cells[0].Value.ToString()));
                     if (numbers.Last() < 0)
-                        throw new ArgumentException("Круговая диаграмма: некоторые ячейки содержат отрицательные числа");
+                        throw new ArgumentException("некоторые ячейки содержат отрицательные числа");
                     sum += float.Parse(dataGridView.Rows[i].Cells[0].Value.ToString());
                 }
                 return sum;
             }
             catch (FormatException)
             {
-                throw new FormatException("Круговая диаграмма: некоторые ячейки не содержат положительные числа");
+                throw new FormatException("Некоректно введены значения");
             }
         }
     }

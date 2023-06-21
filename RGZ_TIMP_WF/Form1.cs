@@ -28,11 +28,11 @@ namespace RGZ_TIMP_WF
             {
                 if (PieChartDataGridView.RowCount == 0) return;
                 pieChart.CreatePieChart(PieChartDataGridView, PieChartPictureBox, InfoPieChartDataGridView);
-                ErrorLabel.Text = "";
+                PieChartErrorLabel.Text = "";
             }
             catch (Exception ex)
             {
-                ErrorLabel.Text = ex.Message;
+                PieChartErrorLabel.Text = ex.Message;
             }
         }
         private void LineChartButton_Click(object sender, EventArgs e)
@@ -41,33 +41,33 @@ namespace RGZ_TIMP_WF
             {
                 if (XYDataGridView.RowCount == 0) return;
                 lineChart.CreateChart(XYDataGridView, LineChartInfoDataGridView, LineChartPictureBox);
-                ErrorLabel.Text = "";
+                LineChartErrorlabel.Text = "";
             }
             catch (Exception ex)
             {
-               ErrorLabel.Text = ex.Message;
+                LineChartErrorlabel.Text = ex.Message;
             }
         }
 
         private void BarChartButton_Click(object sender, EventArgs e)
         {
-            //try
+            try
             {
-                if (XYDataGridView.RowCount == 0) return;
-                barChart.CreateChart(XYDataGridView, BarChartInfoDataGridView, BarChartPictureBox);
-                ErrorLabel.Text = "";
+                if (BarDataGridView.RowCount == 0) return;
+                barChart.CreateChart(BarDataGridView, BarChartInfoDataGridView, BarChartPictureBox);
+                BarErrorLabel.Text = "";
             }
-            //catch (Exception ex)
+            catch (Exception ex)
             {
-               // ErrorLabel.Text = ex.Message;
+                BarErrorLabel.Text = ex.Message;
             }
         }
         private void CreateXYbutton_Click(object sender, EventArgs e)
         {
             int numberXY = XYDataGridView.ColumnCount / 2;
             XYDataGridView.Columns.Add("columnX", "X" + numberXY);
-            XYDataGridView.Columns.Add("columnX", "Y" + numberXY);
-            ErrorLabel.Text = "";
+            XYDataGridView.Columns.Add("columnY", "Y" + numberXY);
+            LineChartErrorlabel.Text = "";
         }
 
         private void DeleteLastChartButton_Click(object sender, EventArgs e)
@@ -76,11 +76,30 @@ namespace RGZ_TIMP_WF
             {
                 XYDataGridView.Columns.RemoveAt(XYDataGridView.ColumnCount - 1);
                 XYDataGridView.Columns.RemoveAt(XYDataGridView.ColumnCount - 1);
-                ErrorLabel.Text = "";
+                LineChartErrorlabel.Text = "";
             }
             catch (ArgumentOutOfRangeException ex)
             {
-                 ErrorLabel.Text = "Все значения X и Y уже удалены";
+                LineChartErrorlabel.Text = "Все значения X и Y уже удалены";
+            }
+        }
+
+        private void AddBarChartButton_Click(object sender, EventArgs e)
+        {
+            BarDataGridView.Columns.Add("ColumnChart", "Значения графика " + (BarDataGridView.ColumnCount - 1));
+        }
+
+        private void DeleteLastBarChartButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (BarDataGridView.ColumnCount == 1)
+                    throw new ArgumentOutOfRangeException();
+                BarDataGridView.Columns.RemoveAt(BarDataGridView.ColumnCount - 1);
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                BarErrorLabel.Text = "Все графики уже удалены";
             }
         }
     }
